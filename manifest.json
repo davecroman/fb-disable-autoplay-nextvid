@@ -1,6 +1,14 @@
 {
   "name": "Disable Next Video AutoPlay on Facebook",
   "version": "1.0",
-  "description": "Disable autoplaying next videos on Facebook",
-  "manifest_version": 2
+  "description": "Disable auto-playing next videos on Facebook",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["main.js"]
+  },
+  "permissions": [
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking"
+  ]
 }
